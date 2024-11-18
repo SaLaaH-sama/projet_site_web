@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">TechCompany - Smartphone</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/translate_smartphone.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <button id="translate-button">🇬🇧</button>
+        <button id="theme-toggle-button">🌙</button>
+        <h1 id="header-title">TechCompany</h1>
+        <nav>
+            <ul>
+                <li><a id="nav-home" href="index.html">Accueil</a></li>
+                <li><a id="nav-hardware" href="hardware.html">Nos produits Hardware</a></li>
+                <!--<li><a href="software.html">Nos services Software</a></li>-->
+                <li><a id="nav-contact" href="contact.html">Nous contacter</a></li>
+                <li><a id="nav-account" href="compte.html">Compte</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="details-produit">
+            <h2 id="product-title">TechPhone Pro 2024</h2>
+            <div class="produit-images">
+                <img src="images/smartphone.jpeg" alt="Smartphone">
+                <img src="images/smartphone2.jpeg" alt="Smartphone">
+                <img src="images/smartphone3.jpeg" alt="Smartphone">
+            </div>
+            <div class="produit-description">
+                <h3 id="description-title">Description</h3>
+                <p id="product-description-1">Le TechPhone Pro 2024 est le dernier cri en matière de technologie mobile,
+                    conçu pour les utilisateurs exigeants qui ne veulent pas faire de compromis sur la performance et le style. Avec son design épuré en verre et métal,
+                    il offre une prise en main confortable et une esthétique moderne. Le TechPhone Pro 2024 intègre le dernier système d’exploitation Android,
+                    offrant une expérience utilisateur fluide et intuitive, enrichie par un écosystème d’applications diversifié.</p>
+                <p id="product-description-2">Le TechPhone Pro 2024 est le compagnon idéal pour ceux qui cherchent à maximiser leur productivité et à profiter de leurs loisirs avec style et puissance.</p>
+            </div>
+            <div class="produit-specs">
+                <h3 id="specs-title">Fiche Technique</h3>
+                <ul>
+                    <li id="specs-screen">Écran : 6.7 pouces, AMOLED, 1440 x 3200 pixels, 120 Hz</li>
+                    <li id="specs-cpu">Processeur : Octa-core 3.2 GHz, chipset Snapdragon 898</li>
+                    <li id="specs-ram">RAM : 12 Go LPDDR5</li>
+                    <li id="specs-storage">Stockage : 256 Go / 512 Go UFS 3.1, extensible via microSD</li>
+                    <li id="specs-camera-main">Appareil Photo Principal : Triple capteur - 108 MP (large) + 16 MP (ultra-large) + 12 MP (téléobjectif), zoom optique 5x</li>
+                    <li id="specs-camera-front">Appareil Photo Frontal : 32 MP, HDR, vidéo 4K</li>
+                    <li id="specs-battery">Batterie : 5000 mAh, charge rapide 65W, charge sans fil 30W</li>
+                    <li id="specs-security">Sécurité : Capteur d’empreintes digitales sous l’écran, reconnaissance faciale</li>
+                    <li id="specs-connectivity">Connectivité : 5G, Wi-Fi 6E, Bluetooth 5.2, NFC, USB Type-C</li>
+                    <li id="specs-os">Système d’exploitation : Android 13</li>
+                    <li id="specs-other">Autres : Résistance à l’eau IP68, haut-parleurs stéréo, prise en charge du stylet</li>
+                </ul>
+            </div>
+            <div class="produit-prix">
+                <h3 id="price-title">Prix</h3>
+                <p id="product-price">959€</p>
+                <form id="order-form" action="php/order.php" method="POST">
+                    <input type="hidden" name="product_name" value="TechPhone Pro 2024">
+                    <input type="hidden" name="price" value="959">
+                    <button type="submit" id="order-button">Commander</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="footer-text">&copy; 2024 TechCompany. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

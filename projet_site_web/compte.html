@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">TechCompany - Créer ou se connecter à un compte</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/translate_compte.js" defer></script>
+    <script src="js/register.js" defer></script>
+    <script src="js/profile.js" defer></script>
+    <script src="js/session_status.js" defer></script>
+    <script src="js/error_handling.js" defer></script>
+    <script src="js/theme.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="translate-button">🇬🇧</button>
+        <button id="theme-toggle-button">🌙</button>
+        <h1 id="header-title">TechCompany</h1>
+        <nav>
+            <ul>
+                <li><a id="nav-home" href="index.html">Accueil</a></li>
+                <li><a id="nav-hardware" href="hardware.html">Nos produits Hardware</a></li>
+                <!--<li><a href="software.html">Nos services Software</a></li>-->
+                <li><a id="nav-contact" href="contact.html">Nous contacter</a></li>
+                <li><a id="nav-account" href="compte.html">Compte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 id="section-title">Créer ou se connecter à un compte</h2>
+            <div class="formulaire-conteneur">
+                <div class="formulaire-boite">
+                    <h3 id="create-account-title">Créer un compte</h3>
+                    <form id="formulaire-inscription" action="php/register.php" method="POST">
+                        <label for="nom-inscription" id="label-nom-inscription">Nom :</label>
+                        <input type="text" id="nom-inscription" name="name" required>
+                        <label for="email-inscription" id="label-email-inscription">Email :</label>
+                        <input type="email" id="email-inscription" name="email" required>
+                        <label for="motdepasse-inscription" id="label-motdepasse-inscription">Mot de passe :</label>
+                        <input type="password" id="motdepasse-inscription" name="password" required>
+                        <button type="submit" id="submit-create-account">Créer un compte</button>
+                        <p id="register-error" class="error" style="display: none;"></p>
+                    </form>
+                </div>
+                <div class="formulaire-boite">
+                    <h3 id="login-title">Se connecter</h3>
+                    <form id="formulaire-connexion" action="php/login.php" method="POST">
+                        <label for="email-connexion" id="label-email-connexion">Email :</label>
+                        <input type="email" id="email-connexion" name="email" required>
+                        <label for="motdepasse-connexion" id="label-motdepasse-connexion">Mot de passe :</label>
+                        <input type="password" id="motdepasse-connexion" name="password" required>
+                        <button type="submit" id="submit-login">Se connecter</button>
+                        <p id="login-error" class="error" style="display: none;"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="footer-text">&copy; 2024 TechCompany. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
